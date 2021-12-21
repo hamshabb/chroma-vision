@@ -4,6 +4,7 @@
 //global variables
 
 const testSequence = [];
+let itemIndex = 0;
 
 console.log('hellow world');
 
@@ -25,8 +26,8 @@ let nextButton = document.getElementById('image-submit');
 function Tester(name, answer, fileExtension = 'jpeg') {
   this.name = name;
   this.src = `../img/${name}.${fileExtension}`;
-  this.answer = answer
-  testSequence.push(this.src);
+  this.answer = answer;
+  testSequence.push(this);
 
 }
 
@@ -68,14 +69,26 @@ new Tester('test-13', 5);
 
 // function to render images
 function renderImages() {
+
+  imageTest.src = testSequence[itemIndex].src;
+  imageTest.alt = testSequence[itemIndex].name;
+
 }
 
+renderImages();
 
 
 
 
 //Event handlers
 
+function handleStartTest(e){
+  
+}
+
+
+
 
 
 //Event Listeners
+startTest.addEventListener('click', handleStartTest);
