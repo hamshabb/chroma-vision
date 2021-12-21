@@ -9,9 +9,13 @@
 - An app that tests color blindness. Based on ishihara test.On the app we are going to have Flat images with different colors show up for the User to enter a number thats on the image.Our App will then record the User scores and then show the User the information about different color blindness based on score.
 
 ## Wireframe:
-![testpage](img/WF.pg1)
-![testresult](img/WF.pg2)
-![aboutUs](img/WF.pg3)
+![testpage](img/WF.pg1.png)
+![testresult](img/WF.pg2.png)
+![aboutUs](img/WF.pg3.png)
+
+## Domain Model:
+![domain](img/201.DomainModel.png)
+
 
 
 
