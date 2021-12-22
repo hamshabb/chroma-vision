@@ -4,6 +4,49 @@ Approved fonts, in order of preference: Arial; Helvetica
 
 Use 
 */
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #5677D4;
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+  height: 200px;
+}
+
+h1 {
+  color: white;
+  padding: 10px;
+  font-size: 3em;
+  letter-spacing: 5px;
+}
+
+ul {
+  margin: 60px;
+}
+
+li{
+  background-color: white;
+  color: #5677D4;
+  display: inline;
+  padding: 20px;
+  margin: 30px;
+  font-size: large;
+  border-radius: 10px;   
+}
+
+li:hover {
+  background-color: red;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 
 p {
   Font: Arial;
