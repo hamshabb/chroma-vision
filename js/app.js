@@ -30,7 +30,7 @@ let startTest = document.getElementById('start-button');
 let submitbutton = document.createElement('button');
 
 // show results button
-let showResults = document.createElement('show-results');
+// let showResults = document.createElement('show-results');
 
 
 
@@ -102,7 +102,7 @@ function renderImages() {
 
 
 //Event handler for start test button
-function handleStartTest(e) {
+function handleStartTest(e) { // eslint-disable-line
 
   renderImages();
 
@@ -158,7 +158,8 @@ function handleSubmit(e) {
     a.setAttribute('href', 'result.html');
     a.textContent = 'Show Results';
     myContainer.appendChild(a);
-    let stringifiedData = JSON.stringify(score);
+    let saveDataArray = [score, maxLength];
+    let stringifiedData = JSON.stringify(saveDataArray);
     localStorage.setItem('scores', stringifiedData);
 
   }
