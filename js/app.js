@@ -128,11 +128,10 @@ function handleStartTest(e) { // eslint-disable-line
 
   form.appendChild(input);
 
-
+  submitbutton.setAttribute('id', 'submit');
   submitbutton.setAttribute('type', 'submit');
 
   form.appendChild(submitbutton);
-
 
 }
 

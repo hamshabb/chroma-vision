@@ -48,6 +48,25 @@ a {
 }
 
 
+section {
+  background-color: #5677D4 ;
+  text-align: center;
+  margin: 20px;
+
+}
+
+#start-button{
+  background-color: #E4D00A;
+}
+
+#submit{
+  background-color: white;
+  padding: 5px 15px;
+}
+
+
+
+
 p {
   Font: Arial;
 }
