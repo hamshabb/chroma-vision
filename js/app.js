@@ -5,7 +5,7 @@
 
 const testSequence = [];
 let testIndex = 0;
-let maxLength = testSequence.length;
+let maxLength = 5;
 
 //user score
 let score = 0;
@@ -30,7 +30,9 @@ let startTest = document.getElementById('start-button');
 let submitbutton = document.createElement('button');
 
 // show results button
-let showResults = document.getElementById('show-results');
+let showResults = document.createElement('show-results');
+
+
 
 
 
@@ -44,10 +46,13 @@ function Tester(name, answer, fileExtension = 'jpeg') {
 
 }
 
+// let retreivedData = localStorage.getItem('scores');
+// if (retreivedData) {
+//   let parsedData = JSON.parse(retreivedData);
 
 
 
-
+// }
 
 // // New User Constructor
 // function NewUser(name) {
@@ -97,11 +102,11 @@ function renderImages() {
 
 
 //Event handler for start test button
-function handleStartTest(e){
+function handleStartTest(e) {
 
   renderImages();
 
-  console.log('i am here first');
+  //console.log('i am here first');
 
   startTest.innerHTML = '';
 
@@ -133,39 +138,36 @@ function handleStartTest(e){
 
 
 // Event Handler
-function handleSubmit(e){
+function handleSubmit(e) {
   e.preventDefault();
-  console.log(e.target.answer);
+  //console.log(e.target.answer);
 
   let correctAnswer = +e.target.answer.value;
 
   //console.log(correctAnswer);
 
-  if (correctAnswer === testSequence[testIndex].answer){
+  if (correctAnswer === testSequence[testIndex].answer) {
     score++;
   }
   console.log(score);
   testIndex++;
 
-  if (testIndex === maxLength){
+  if (testIndex === maxLength) {
     form.innerHTML = '';
-    myContainer.appendChild(showResults);
+    let a = document.createElement('a');
+    a.setAttribute('href', 'result.html');
+    a.textContent = 'Show Results';
+    myContainer.appendChild(a);
+    let stringifiedData = JSON.stringify(score);
+    localStorage.setItem('scores', stringifiedData);
+
   }
 
   form.reset();
   renderImages();
 
-}
-
-
-
-function handleResult(e){
-
 
 }
-
-
-
 
 
 //Event Listeners
@@ -176,5 +178,3 @@ startTest.addEventListener('click', handleStartTest);
 //Event listener for button submission
 form.addEventListener('submit', handleSubmit);
 
-//Event listener for Results
-showResults.addEventListener('click', handleResult);
