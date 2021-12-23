@@ -13,7 +13,7 @@ header {
   background-color: #5677D4;
   text-align: center;
   margin: 2vw;
-  border-radius: 10px;
+  border-radius: 1vw;
   
 }
 
@@ -57,13 +57,22 @@ a {
   color: black;
 }
 
+#starting-image{
+  width: 60%;
+}
 
+
+#image-test{
+  width: 50%;
+}
 
 
 section {
   text-align: center;
   margin: 20px;
-
+  border-radius: 1vw;
+  color: white;
+  padding: 1vw;
 }
 
 #start-button {
@@ -87,7 +96,7 @@ form {
 footer {
   background-color: #5677D4 ;
   text-align: left;
-  border-radius: 10px;
+  border-radius: 1vw;
   margin: 20px;
   color: white;
   height: 30px;
@@ -105,3 +114,29 @@ label, input, button{
   margin-bottom: 10px;
 }
 
+
+
+
+
+
+#results-section {
+  background-color: #5677D4;
+  margin: 2vw;
+}
+
+#result-text {
+  background-color: red;
+
+}
+
+
+#information-1 {
+  background-color: #5677D4;
+  width: 30%;
+}
+
+#information-2 {
+  background-color: #5677D4;
+  width: 30%;
+  display: float;
+}
