@@ -29,6 +29,10 @@ let startTest = document.getElementById('start-button');
 // Submit button
 let submitbutton = document.createElement('button');
 
+
+let startImage = document.getElementById('starting-image');
+
+
 // show results button
 // let showResults = document.createElement('show-results');
 
@@ -107,7 +111,7 @@ function handleStartTest(e) { // eslint-disable-line
   renderImages();
 
   //console.log('i am here first');
-
+  startImage.setAttribute('src','');
   startTest.innerHTML = '';
 
   myContainer.appendChild(form);
@@ -130,6 +134,7 @@ function handleStartTest(e) { // eslint-disable-line
 
   submitbutton.setAttribute('id', 'submit');
   submitbutton.setAttribute('type', 'submit');
+  submitbutton.textContent = 'Submit';
 
   form.appendChild(submitbutton);
 
