@@ -12,30 +12,40 @@ body {
 header {
   background-color: #5677D4;
   text-align: center;
-  margin: 20px;
+  margin: 2vw;
   border-radius: 10px;
-  height: 200px;
+  
 }
 
 h1 {
   color: white;
-  padding: 10px;
-  font-size: 3em;
+  padding: 1vw;
+  font-size: 6vw;
   letter-spacing: 5px;
 }
 
+
+nav{
+  padding-bottom: 1vw;
+}
+
 ul {
-  margin: 60px;
+  margin: auto;
+  width: max-content;
+  padding: 2vw;
+
 }
 
 li{
   background-color: white;
   color: #5677D4;
   display: inline;
-  padding: 20px;
-  margin: 30px;
-  font-size: large;
-  border-radius: 10px;   
+  padding: 1vw;
+  margin: 1vw;
+  font-size: 2.5vw;
+  border-radius: 10px;  
+ 
+
 }
 
 li:hover {
@@ -48,8 +58,9 @@ a {
 }
 
 
+
+
 section {
-  background-color: #5677D4 ;
   text-align: center;
   margin: 20px;
 
@@ -58,6 +69,10 @@ section {
 #start-button {
   background-color: #5677D4;
   color: white;
+  margin-left: 40%;
+  margin-right: 40%;
+  border-radius: 5px;
+ 
 }
 
 #submit {
@@ -66,7 +81,7 @@ section {
 }
 
 form {
-  vertical-align: middle;
+  text-align: center;
 }
 
 footer {
@@ -83,3 +98,10 @@ footer {
 p {
   Font: Arial;
 }
+
+label, input, button{
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
