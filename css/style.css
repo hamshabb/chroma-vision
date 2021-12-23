@@ -55,16 +55,29 @@ section {
 
 }
 
-#start-button{
-  background-color: #E4D00A;
+#start-button {
+  background-color: #5677D4;
+  color: white;
 }
 
-#submit{
+#submit {
   background-color: white;
   padding: 5px 15px;
 }
 
+form {
+  vertical-align: middle;
+}
 
+footer {
+  background-color: #5677D4 ;
+  text-align: left;
+  border-radius: 10px;
+  margin: 20px;
+  color: white;
+  height: 30px;
+  font-size: small;
+}
 
 
 p {
