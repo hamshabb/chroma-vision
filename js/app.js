@@ -5,7 +5,9 @@
 
 const testSequence = [];
 let testIndex = 0;
-let maxLength = 5;
+let maxLength = 13;
+
+let theNewTest = [];
 
 //user score
 let score = 0;
@@ -50,21 +52,8 @@ function Tester(name, answer, fileExtension = 'jpeg') {
 
 }
 
-// let retreivedData = localStorage.getItem('scores');
-// if (retreivedData) {
-//   let parsedData = JSON.parse(retreivedData);
 
 
-
-// }
-
-// // New User Constructor
-// function NewUser(name) {
-//   this.name = name;
-
-//   //results from taking test
-//   this.results = results;
-// }
 
 
 // Load in test images
@@ -85,15 +74,26 @@ new Tester('test-13', 5);
 
 
 
+// random number generator
+function getRandomIndex() {
+  return Math.floor(Math.random() * testSequence.length);
+}
 
 
+// populate a new array with a randomized test sequence
+while (theNewTest.length < testSequence.length) {
+  let randoNum = getRandomIndex();
+  while (!theNewTest.includes(randoNum)) {
+    theNewTest.unshift(randoNum);
+  }
+}
 
 
 // function to render images
 function renderImages() {
 
-  imageTest.src = testSequence[testIndex].src;
-  imageTest.alt = testSequence[testIndex].name;
+  imageTest.src = testSequence[theNewTest[testIndex]].src;
+  imageTest.alt = testSequence[theNewTest[testIndex]].name;
 
 }
 
@@ -161,6 +161,7 @@ function handleSubmit(e) {
     form.innerHTML = '';
     let a = document.createElement('a');
     a.setAttribute('href', 'result.html');
+    a.setAttribute('id', 'show-results');
     a.textContent = 'Show Results';
     myContainer.appendChild(a);
     let saveDataArray = [score, maxLength];
