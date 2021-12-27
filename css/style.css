@@ -6,7 +6,7 @@ Use
 */
 body {
   background-color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 header {
@@ -21,7 +21,7 @@ h1 {
   color: white;
   padding: 1vw;
   font-size: 6vw;
-  letter-spacing: 5px;
+  letter-spacing: 1vw;
 }
 
 
@@ -33,7 +33,6 @@ ul {
   margin: auto;
   width: max-content;
   padding: 2vw;
-
 }
 
 li{
@@ -42,8 +41,8 @@ li{
   display: inline;
   padding: 1vw;
   margin: 1vw;
-  font-size: 2.5vw;
-  border-radius: 10px;  
+  font-size: 2vw;
+  border-radius: 1vw;  
  
 
 }
@@ -58,7 +57,8 @@ a {
 }
 
 #starting-image{
-  width: 60%;
+
+  width: 100%;
 }
 
 
@@ -72,21 +72,36 @@ section {
   margin: 20px;
   border-radius: 1vw;
   color: white;
-  padding: 1vw;
+  
 }
 
 #start-button {
   background-color: #5677D4;
   color: white;
-  margin-left: 40%;
-  margin-right: 40%;
-  border-radius: 5px;
- 
+  margin-left: 45%;
+  margin-right: 45%;
+  border-radius: 1vw;
+}
+
+#start-button:hover {
+  background-color: red;
+
+}
+
+#submit:hover {
+  background-color: red;
+
 }
 
 #submit {
-  background-color: white;
+  background-color: #5677D4;
   padding: 5px 15px;
+  font-family: 'Roboto Mono', monospace;
+  border-radius: 1vw;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  
 }
 
 form {
@@ -101,12 +116,10 @@ footer {
   color: white;
   height: 30px;
   font-size: small;
+  padding: 1vw;
 }
 
 
-p {
-  Font: Arial;
-}
 
 label, input, button{
   display: block;
