@@ -39,7 +39,7 @@ li{
   background-color: white;
   color: #5677D4;
   display: inline;
-  padding: 1vw;
+  padding: 0.75vw;
   margin: 1vw;
   font-size: 2vw;
   border-radius: 1vw;  
@@ -64,6 +64,7 @@ a {
 
 #image-test{
   width: 50%;
+  margin-bottom: 3vw;
 }
 
 
@@ -99,10 +100,30 @@ section {
   font-family: 'Roboto Mono', monospace;
   border-radius: 1vw;
   color: white;
-  text-transform: uppercase;
+  padding: 1vw;
   border: none;
   
 }
+
+
+#show-results:hover {
+  background-color: red;
+
+}
+
+
+#show-results {
+  background-color: #5677D4;
+  padding: 5px 15px;
+  font-family: 'Roboto Mono', monospace;
+  border-radius: 1vw;
+  color: white;
+  border: none;
+}
+
+
+
+
 
 form {
   text-align: center;
