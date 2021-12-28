@@ -165,15 +165,23 @@ label, input, button{
 
 h3 {
   padding: 3vw;
-  font-size:x-large;
+  font-size:2vw;
   font-weight: bold;
 }
+
+
 
 h4 {
   padding: 2vw;;
   font-size: large;
   font-weight: bold;
 }
+
+
+.flip-card-back p{
+  font-size: 1.5vw;
+}
+
 
 #test-information {
   padding: 3vw;
@@ -183,6 +191,16 @@ h4 {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 90vw;
+  margin: 2vw;
+  gap: 3vw;
+}
+
+
+.container2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 40vw;
   margin: 2vw;
   gap: 3vw;
 }
@@ -209,7 +227,7 @@ h4 {
 }
 
 #result-text {
-  background-color: rgb(185, 220, 231);
+  background-color: rgb(255, 193, 168);
   color:black;
   padding: 2vw;
   border: solid rgb(168, 168, 168);
@@ -249,9 +267,11 @@ h4 {
 .flip-card {
   background-color: transparent;
   width: 100%;
-  height: 20vw;
+  height: 38vw;
   border: 1px solid #c5c5c5;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin: auto;
+  border-radius: 1vw;
 }
 
 /* This container is needed to position the front and back side */
@@ -262,6 +282,8 @@ h4 {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  margin: auto;
+  border-radius: 1vw;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -276,19 +298,24 @@ h4 {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  margin: auto;
+  border-radius: 1vw;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: rgb(240, 240, 240);
   color: black;
+  border-radius: 1vw;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: rgb(0, 128, 255);
   color: white;
   transform: rotateY(180deg);
+  margin: auto;
+  border-radius: 1vw;
 }
 
 
