@@ -27,14 +27,12 @@
 
 ### Resources
 
-- Roboto Mono, Designer - Christian Robertson
+- Roboto Mono, Designer - Christian Robertson, https://fonts.google.com/specimen/Roboto
 
 
 Photo Credits
 
 - https://unsplash.com/photos/gvptKmonylk - Linus Mimietz
 - https://www.boredpanda.com/different-types-color-blindness-photos/?utm_source=google&utm_medium=organic&utm_campaign=organic - Giedrė Vaičiulaitytė
-
-
-
+- https://www.color-blindness.com/ishiharas-test-for-colour-deficiency-38-plates-edition/ - Ishihara Test Plates
 
