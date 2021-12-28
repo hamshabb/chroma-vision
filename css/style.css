@@ -115,12 +115,16 @@ section {
 
 
 #show-results {
+  display: block;
   background-color: #5677D4;
   padding: 5px 15px;
   font-family: 'Roboto Mono', monospace;
   border-radius: 1vw;
-  color: white;
+  color: rgb(255, 255, 255);
   border: none;
+  margin-right: 40%;
+  margin-left: 40%;
+  margin-top: 2vw;
 }
 
 #test-information {
@@ -151,6 +155,11 @@ label, input, button{
   display: block;
   margin: auto;
   margin-bottom: 10px;
+}
+
+#progressheading h3{
+  color:black;
+  padding: 1vw;
 }
 
 
@@ -215,33 +224,26 @@ h4 {
 }
 
 
-.container1 {
-  height: 25px;
-  text-align: center;
-  background-color:#ccc ;
-  position: relative;
+
+#myProgress {
+  background-color: rgb(223, 213, 213);
   margin: 2vw;
-  border: 2px solid lightslategrey;
-  border-radius: 10px; 
- 
-}
-
-.container1 .progress-bar {
-  position: absolute;
-  height: 100%;
-  background: linear-gradient(to left, #e4d00a, #e0dcad);
-  border-radius: 10px;
-}
-
-#play-animation {
-  animation: progress-animation 10s forwards;
-}
-
-@keyframes progress-animation {
-  0% { width:0%;}
-  100% {width: 100%;}
+  border-radius: 1vw;
 
 }
+
+#myBar {
+  width: 0%;
+  
+  background-color:#BF391A;
+  background: linear-gradient(to left, #BF391A, #f3f3f3);
+  border-radius: 1vw;
+  text-align: center;
+  font-size: larger;
+  
+
+}
+
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {

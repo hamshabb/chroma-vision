@@ -7,6 +7,10 @@ const testSequence = [];
 let testIndex = 0;
 let maxLength = 13;
 
+const progressWidth = [8,16,24,32,40,48,56,64,72,80,88,96,100];
+
+
+
 let theNewTest = [];
 
 //user score
@@ -36,7 +40,7 @@ let startImage = document.getElementById('starting-image');
 
 let startInformation = document.getElementById('test-information');
 
-
+let progressheading = document.getElementById('progressheading');
 
 
 
@@ -107,6 +111,26 @@ function handleStartTest(e) { // eslint-disable-line
 
   renderImages();
 
+  // let textProgress = document.createElement('h3');
+
+  // textProgress.textContent = 'Progress Bar';
+  
+  // progressheading.appendChild(textProgress);
+
+
+
+
+  let myProgress = document.getElementById('myProgress');
+
+  let myBar = document.createElement('div');
+  myBar.setAttribute('style', 'width:0%');
+  myBar.setAttribute('id', 'myBar');
+
+  myProgress.appendChild(myBar);
+
+  
+
+
   //console.log('i am here first');
   startImage.remove();
   startTest.remove();
@@ -140,6 +164,12 @@ function handleStartTest(e) { // eslint-disable-line
 
 // Event Handler
 function handleSubmit(e) {
+
+  let myBar = document.getElementById('myBar');
+
+  myBar.setAttribute('style', `width:${progressWidth[testIndex]}%`);
+  myBar.textContent=`${progressWidth[testIndex]}%`;
+
   e.preventDefault();
   //console.log(e.target.answer);
 
@@ -153,9 +183,14 @@ function handleSubmit(e) {
   console.log(score);
   testIndex++;
 
+
+
+
+
   if (testIndex === maxLength) {
-    form.innerHTML = '';
+    form.remove();
     let a = document.createElement('a');
+
     a.setAttribute('href', 'result.html');
     a.setAttribute('id', 'show-results');
     a.textContent = 'Show Results';
@@ -165,8 +200,7 @@ function handleSubmit(e) {
     localStorage.setItem('scores', stringifiedData);
 
   }
-  const progressBar = document.querySelector('.progress-bar');
-  progressBar.setAttribute('id','play-animation');
+
 
   form.reset();
   renderImages();
