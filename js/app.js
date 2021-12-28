@@ -133,10 +133,8 @@ function handleStartTest(e) { // eslint-disable-line
   submitbutton.setAttribute('id', 'submit');
   submitbutton.setAttribute('type', 'submit');
   submitbutton.textContent = 'Submit';
-
   form.appendChild(submitbutton);
-  const progressBar = document.querySelector('.progress-bar');
-  progressBar.setAttribute('id','play-animation');
+
 }
 
 
@@ -167,6 +165,8 @@ function handleSubmit(e) {
     localStorage.setItem('scores', stringifiedData);
 
   }
+  const progressBar = document.querySelector('.progress-bar');
+  progressBar.setAttribute('id','play-animation');
 
   form.reset();
   renderImages();
@@ -182,4 +182,3 @@ startTest.addEventListener('click', handleStartTest);
 
 //Event listener for button submission
 form.addEventListener('submit', handleSubmit);
-
