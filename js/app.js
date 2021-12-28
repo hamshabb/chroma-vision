@@ -34,10 +34,7 @@ let submitbutton = document.createElement('button');
 
 let startImage = document.getElementById('starting-image');
 
-
-// show results button
-// let showResults = document.createElement('show-results');
-
+let startInformation = document.getElementById('test-information');
 
 
 
@@ -111,8 +108,9 @@ function handleStartTest(e) { // eslint-disable-line
   renderImages();
 
   //console.log('i am here first');
-  startImage.setAttribute('src','');
-  startTest.innerHTML = '';
+  startImage.remove();
+  startTest.remove();
+  startInformation.remove();
 
   myContainer.appendChild(form);
 

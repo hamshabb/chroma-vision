@@ -20,7 +20,7 @@ header {
 h1 {
   color: white;
   padding: 1vw;
-  font-size: 6vw;
+  font-size: 4vw;
   letter-spacing: 1vw;
 }
 
@@ -63,8 +63,8 @@ a {
 
 
 #image-test{
-  width: 50%;
-  margin-bottom: 3vw;
+  width: 20%;
+ 
 }
 
 
@@ -79,9 +79,11 @@ section {
 #start-button {
   background-color: #5677D4;
   color: white;
-  margin-left: 45%;
-  margin-right: 45%;
+  margin-left: 40%;
+  margin-right: 40%;
   border-radius: 1vw;
+  padding: 2vw;
+  font-size: x-large;
 }
 
 #start-button:hover {
@@ -121,6 +123,9 @@ section {
   border: none;
 }
 
+#test-information {
+  color: black;
+}
 
 
 
@@ -149,9 +154,45 @@ label, input, button{
 }
 
 
+h3 {
+  padding: 3vw;
+  font-size:x-large;
+  font-weight: bold;
+}
+
+h4 {
+  padding: 2vw;;
+  font-size: large;
+  font-weight: bold;
+}
+
+#test-information {
+  padding: 3vw;
+}
 
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 2vw;
+  gap: 3vw;
+}
 
+.box {
+  background-color: rgb(226, 231, 238);
+  padding: 1vw;
+  border-radius: 1vw;
+}
+
+.boximg {
+  grid-column: span 2;
+  background-color: white;
+}
+
+#difference {
+  max-width: 100%;
+  max-height: 100%;
+}
 
 #results-section {
   background-color: #5677D4;
@@ -159,21 +200,20 @@ label, input, button{
 }
 
 #result-text {
-  background-color: red;
+  background-color: rgb(185, 220, 231);
+  color:black;
+  padding: 2vw;
+  border: solid rgb(168, 168, 168);
+  font-weight: bolder;
+
 
 }
 
-
-#information-1 {
-  background-color: #5677D4;
-  width: 30%;
+#results-image{
+  max-height: 100%;
+  max-width: 100%;
 }
 
-#information-2 {
-  background-color: #5677D4;
-  width: 30%;
-  display: float;
-}
 
 .container1 {
   height: 25px;
@@ -198,4 +238,64 @@ label, input, button{
   0% { width:0%;}
   100% {width: 100%;}
 
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 20vw;
+  border: 1px solid #c5c5c5;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgb(240, 240, 240);
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+#portrait {
+  max-width: 20%;
+  background-color:rgb(151, 120, 120);   
+  border-radius:50%;
+
+}
+
+#about-us section{
+  color: black;
+  background-color: rgb(199, 202, 207);
 }
