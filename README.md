@@ -30,4 +30,11 @@
 - Roboto Mono, Designer - Christian Robertson
 
 
+Photo Credits
+
+- https://unsplash.com/photos/gvptKmonylk - Linus Mimietz
+- https://www.boredpanda.com/different-types-color-blindness-photos/?utm_source=google&utm_medium=organic&utm_campaign=organic - Giedrė Vaičiulaitytė
+
+
+
 

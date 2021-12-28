@@ -40,7 +40,7 @@ let startImage = document.getElementById('starting-image');
 
 let startInformation = document.getElementById('test-information');
 
-
+let progressheading = document.getElementById('progressheading');
 
 
 
@@ -111,6 +111,14 @@ function handleStartTest(e) { // eslint-disable-line
 
   renderImages();
 
+  // let textProgress = document.createElement('h3');
+
+  // textProgress.textContent = 'Progress Bar';
+  
+  // progressheading.appendChild(textProgress);
+
+
+
 
   let myProgress = document.getElementById('myProgress');
 
@@ -119,6 +127,8 @@ function handleStartTest(e) { // eslint-disable-line
   myBar.setAttribute('id', 'myBar');
 
   myProgress.appendChild(myBar);
+
+  
 
 
   //console.log('i am here first');
@@ -178,8 +188,9 @@ function handleSubmit(e) {
 
 
   if (testIndex === maxLength) {
-    form.innerHTML = '';
+    form.remove();
     let a = document.createElement('a');
+
     a.setAttribute('href', 'result.html');
     a.setAttribute('id', 'show-results');
     a.textContent = 'Show Results';
