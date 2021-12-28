@@ -217,16 +217,19 @@ h4 {
 
 .container1 {
   height: 25px;
+  text-align: center;
   background-color:#ccc ;
   position: relative;
+  margin: 2vw;
+  border: 2px solid lightslategrey;
   border-radius: 10px; 
+ 
 }
 
 .container1 .progress-bar {
   position: absolute;
   height: 100%;
-  background-color: #E4D00A;
- 
+  background: linear-gradient(to left, #e4d00a, #e0dcad);
   border-radius: 10px;
 }
 
@@ -239,7 +242,6 @@ h4 {
   100% {width: 100%;}
 
 }
-
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
