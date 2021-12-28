@@ -76,6 +76,7 @@ section {
   
 }
 
+
 #start-button {
   background-color: #5677D4;
   color: white;
@@ -112,7 +113,6 @@ section {
   background-color: red;
 
 }
-
 
 #show-results {
   display: block;
@@ -330,3 +330,7 @@ h4 {
   color: black;
   background-color: rgb(199, 202, 207);
 }
+
+#links {
+  color: #5677D4 ;
+} 
