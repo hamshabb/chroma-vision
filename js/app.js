@@ -137,6 +137,7 @@ function handleStartTest(e) { // eslint-disable-line
   submitbutton.textContent = 'Submit';
 
   form.appendChild(submitbutton);
+
   const progressBar = document.querySelector('.progress-bar');
   progressBar.setAttribute('id','play-animation');
 }

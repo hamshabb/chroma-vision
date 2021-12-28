@@ -57,7 +57,6 @@ a {
 }
 
 #starting-image{
-
   width: 100%;
 }
 
@@ -102,6 +101,7 @@ section {
   color: white;
   padding: 1vw;
   border: none;
+
   
 }
 
@@ -175,19 +175,20 @@ label, input, button{
   display: float;
 }
 
-.container1 {
+.progress-status {
   height: 25px;
   background-color:#ccc ;
   position: relative;
-  border-radius: 10px; 
+  border-radius: 10px;
+  margin: 2vw;
 }
 
-.container1 .progress-bar {
+.progress-status .progress-bar {
   position: absolute;
   height: 100%;
   background-color: #E4D00A;
- 
   border-radius: 10px;
+  
 }
 
 #play-animation {
