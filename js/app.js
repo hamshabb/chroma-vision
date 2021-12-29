@@ -40,7 +40,7 @@ let startImage = document.getElementById('starting-image');
 
 let startInformation = document.getElementById('test-information');
 
-let progressheading = document.getElementById('progressheading');
+
 
 
 
@@ -89,7 +89,7 @@ while (theNewTest.length < testSequence.length) {
   }
 }
 
-
+console.log(theNewTest)
 // function to render images
 function renderImages() {
 
@@ -110,15 +110,6 @@ function renderImages() {
 function handleStartTest(e) { // eslint-disable-line
 
   renderImages();
-
-  // let textProgress = document.createElement('h3');
-
-  // textProgress.textContent = 'Progress Bar';
-  
-  // progressheading.appendChild(textProgress);
-
-
-
 
   let myProgress = document.getElementById('myProgress');
 
@@ -177,7 +168,7 @@ function handleSubmit(e) {
 
   //console.log(correctAnswer);
 
-  if (correctAnswer === testSequence[testIndex].answer) {
+  if (correctAnswer === testSequence[theNewTest[testIndex]].answer) {
     score++;
   }
   console.log(score);
@@ -189,6 +180,7 @@ function handleSubmit(e) {
 
   if (testIndex === maxLength) {
     form.remove();
+    imageTest.remove();
     let a = document.createElement('a');
 
     a.setAttribute('href', 'result.html');
