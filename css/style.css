@@ -1,0 +1,336 @@
+/* Approved color palette: #FFFFFF (Black); #000000 (White); #5677D4 (Medium Blue); #BF391A (Medium Red); #E4D00A (Citrine). Refer to Style Guide in Trello 
+
+Approved fonts, in order of preference: Arial; Helvetica
+
+Use 
+*/
+body {
+  background-color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+header {
+  background-color: #5677D4;
+  text-align: center;
+  margin: 2vw;
+  border-radius: 1vw;
+  
+}
+
+h1 {
+  color: white;
+  padding: 1vw;
+  font-size: 4vw;
+  letter-spacing: 1vw;
+}
+
+
+nav{
+  padding-bottom: 1vw;
+}
+
+ul {
+  margin: auto;
+  width: max-content;
+  padding: 2vw;
+}
+
+li{
+  background-color: white;
+  color: #5677D4;
+  display: inline;
+  padding: 0.75vw;
+  margin: 1vw;
+  font-size: 2vw;
+  border-radius: 1vw;  
+ 
+
+}
+
+li:hover {
+  background-color: red;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#starting-image{
+
+  width: 100%;
+}
+
+
+#image-test{
+  width: 20%;
+ 
+}
+
+
+section {
+  text-align: center;
+  margin: 20px;
+  border-radius: 1vw;
+  color: white;
+  
+}
+
+
+#start-button {
+  background-color: #5677D4;
+  color: white;
+  margin-left: 40%;
+  margin-right: 40%;
+  border-radius: 1vw;
+  padding: 2vw;
+  font-size: x-large;
+}
+
+#start-button:hover {
+  background-color: red;
+
+}
+
+#submit:hover {
+  background-color: red;
+
+}
+
+#submit {
+  background-color: #5677D4;
+  padding: 5px 15px;
+  font-family: 'Roboto Mono', monospace;
+  border-radius: 1vw;
+  color: white;
+  padding: 1vw;
+  border: none;
+  
+}
+
+
+#show-results:hover {
+  background-color: red;
+
+}
+
+#show-results {
+  display: block;
+  background-color: #5677D4;
+  padding: 5px 15px;
+  font-family: 'Roboto Mono', monospace;
+  border-radius: 1vw;
+  color: rgb(255, 255, 255);
+  border: none;
+  margin-right: 40%;
+  margin-left: 40%;
+  margin-top: 2vw;
+}
+
+#test-information {
+  color: black;
+}
+
+
+
+
+form {
+  text-align: center;
+}
+
+footer {
+  background-color: #5677D4 ;
+  text-align: left;
+  border-radius: 1vw;
+  margin: 20px;
+  color: white;
+  height: 30px;
+  font-size: small;
+  padding: 1vw;
+}
+
+
+
+label, input, button{
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#progressheading h3{
+  color:black;
+  padding: 1vw;
+}
+
+
+h3 {
+  padding: 3vw;
+  font-size:2vw;
+  font-weight: bold;
+}
+
+
+
+h4 {
+  padding: 2vw;;
+  font-size: large;
+  font-weight: bold;
+}
+
+
+.flip-card-back p{
+  font-size: 1.5vw;
+}
+
+
+#test-information {
+  padding: 3vw;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 90vw;
+  margin: 2vw;
+  gap: 3vw;
+}
+
+
+.container2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 40vw;
+  margin: 2vw;
+  gap: 3vw;
+}
+
+.box {
+  background-color: rgb(226, 231, 238);
+  padding: 1vw;
+  border-radius: 1vw;
+}
+
+.boximg {
+  grid-column: span 2;
+  background-color: white;
+}
+
+#difference {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#results-section {
+  background-color: #5677D4;
+  margin: 2vw;
+}
+
+#result-text {
+  background-color: rgb(255, 193, 168);
+  color:black;
+  padding: 2vw;
+  border: solid rgb(168, 168, 168);
+  font-weight: bolder;
+
+
+}
+
+#results-image{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+
+#myProgress {
+  background-color: rgb(223, 213, 213);
+  margin: 2vw;
+  border-radius: 1vw;
+
+}
+
+#myBar {
+  width: 0%;
+  
+  background-color:#BF391A;
+  background: linear-gradient(to left, #BF391A, #f3f3f3);
+  border-radius: 1vw;
+  text-align: center;
+  font-size: larger;
+  
+
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 38vw;
+  border: 1px solid #c5c5c5;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin: auto;
+  border-radius: 1vw;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  margin: auto;
+  border-radius: 1vw;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  margin: auto;
+  border-radius: 1vw;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgb(240, 240, 240);
+  color: black;
+  border-radius: 1vw;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(0, 128, 255);
+  color: white;
+  transform: rotateY(180deg);
+  margin: auto;
+  border-radius: 1vw;
+}
+
+
+#portrait {
+  max-width: 20%;
+  background-color:rgb(151, 120, 120);   
+  border-radius:50%;
+
+}
+
+#about-us section{
+  color: black;
+  background-color: rgb(199, 202, 207);
+}
+
+#links {
+  color: #5677D4 ;
+} 
