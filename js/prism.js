@@ -1,9 +1,7 @@
 'use strict';
 
 function prismRender() {
-  //document.getElementbyID('beam-r').style.transform =  {}
-  // let beamR = document.getElementById('beam-r');
-  // beamR.classList.add('refract');
+
   let diffractees = document.querySelectorAll('.rectangle');
   for (let i = 0; i < diffractees.length; i++) {
     diffractees[i].classList.add('refract');
@@ -13,8 +11,6 @@ function prismRender() {
     colorees[i].classList.add('refract');
   }
 }
-
-//let prism = document.getElementbyID('prism');
 
 let prismButton = document.getElementById('prism-button');
 
