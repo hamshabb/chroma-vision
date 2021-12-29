@@ -15,10 +15,6 @@ let theNewTest = [];
 
 //user score
 let score = 0;
-
-console.log('hello world');
-
-
 //Window to DOM
 let myContainer = document.getElementById('container');
 
@@ -89,7 +85,7 @@ while (theNewTest.length < testSequence.length) {
   }
 }
 
-console.log(theNewTest)
+console.log(theNewTest);
 // function to render images
 function renderImages() {
 
@@ -118,10 +114,6 @@ function handleStartTest(e) { // eslint-disable-line
   myBar.setAttribute('id', 'myBar');
 
   myProgress.appendChild(myBar);
-
-  
-
-
   //console.log('i am here first');
   startImage.remove();
   startTest.remove();
