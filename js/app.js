@@ -43,7 +43,7 @@ let startInformation = document.getElementById('test-information');
 //Test Constructor
 function Tester(name, answer, fileExtension = 'jpeg') {
   this.name = name;
-  this.src = `../img/${name}.${fileExtension}`;
+  this.src = `img/${name}.${fileExtension}`;
   this.answer = answer;
   testSequence.push(this);
 
